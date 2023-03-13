@@ -74,12 +74,19 @@ document.write(solve);
 //   sumouthm([1, 6, 8, 2,9,12]);
 
 //another solution هنا لو اصغر او اكبر رقم متكرر بيشيل واحد بس
-function sumhm(arr) {
-  if (arr === null) return 0;
-  return arr
-    .sort((a, b) => a - b)
-    .slice(1, -1)
-    .reduce((acc, current) => acc + current, 0);
-}
-console.log(sumhm([1,1,6,8,2,9,12,12]));
+// function sumhm(arr) {
+//   if (arr === null) return 0;
+//   return arr
+//     .sort((a, b) => a - b)
+//     .slice(1, -1)
+//     .reduce((acc, current) => acc + current, 0);
+// }
+// console.log(sumhm([1,1,6,8,2,9,12,12]));
 /*-------------------------------------*/
+//problem 4
+function repeatstr(number,str){
+    for(let i=0;i<number;i++){
+        return str.repeat(number);
+    }
+}
+console.log(repeatstr(4,"moh "));
