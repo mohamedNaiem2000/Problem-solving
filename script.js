@@ -1,18 +1,16 @@
 problem = [
   { number: 1, title: "Even Or Odd" },
   { number: 2, title: "sum without negative" },
-  { number: 2, title: "Even" },
-  { number: 2, title: "Even" },
-  { number: 2, title: "Even" },
+  { number: 3, title: "sum without max and min" },
+  { number: 4, title: "Even" },
+  { number: 5, title: "revese number" },
 ];
 let btn1 = document.querySelector(".btn1");
 console.log(btn1);
 let solve = problem.map((obj) => {
-  return `<div>
-          number-  ${obj.number}
-          name-  ${obj.title}
-             <button>finish</button>
-          </div>
+  return `<h3>
+          number-  ${obj.number} name-  ${obj.title} <button>finish</button>
+          </h3>
            `;
 });
 document.write(solve);
