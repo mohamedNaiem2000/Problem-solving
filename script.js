@@ -84,9 +84,17 @@ document.write(solve);
 // console.log(sumhm([1,1,6,8,2,9,12,12]));
 /*-------------------------------------*/
 //problem 4
-function repeatstr(number,str){
-    for(let i=0;i<number;i++){
-        return str.repeat(number);
-    }
+// function repeatstr(number,str){
+//     for(let i=0;i<number;i++){
+//         return str.repeat(number);
+//     }
+// }
+// console.log(repeatstr(4,"moh "));
+/*----------------------------------------*/
+//problem 5
+function digitize(num){
+return num.toString().split("").map((x)=>Number(x)).reverse();
 }
-console.log(repeatstr(4,"moh "));
+ console.log(digitize(98563)); 
+ /*----------------------------------------*/
+
