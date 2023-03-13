@@ -55,23 +55,31 @@ document.write(solve);
 // console.log(sumition([1,2,3,-3,6,-9]));
 /*------------------------------------------*/
 //problem3
-let result = 0;
 
-function sumwithouthm(arr) {
-  if (arr == null) return 0;
+// function sumwithouthm(arr) {
+//   if (arr == null) return 0;
+//   return arr
+//     .filter((x) => x !== Math.min(...arr) && x !== Math.max(...arr))
+//     .reduce((acc, current) => acc + current, 0);
+// }
+// console.log(sumwithouthm([1, 6, 8, 2,9,12]));
+//another solution
+// function sumouthm(arr) {
+//     let maxvalue = Math.max(...arr);
+//     let minvalue = Math.min(...arr);
+//     let filterarr = arr.filter((x) => x !== maxvalue && x !== minvalue);
+//     let result=filterarr.reduce((acc, current) => acc + current, 0);
+//     console.log(result);
+//   }
+//   sumouthm([1, 6, 8, 2,9,12]);
+
+//another solution هنا لو اصغر او اكبر رقم متكرر بيشيل واحد بس
+function sumhm(arr) {
+  if (arr === null) return 0;
   return arr
-    .filter((x) => x !== Math.min(...arr) && x !== Math.max(...arr))
+    .sort((a, b) => a - b)
+    .slice(1, -1)
     .reduce((acc, current) => acc + current, 0);
 }
-console.log(sumwithouthm([1, 6, 8, 2,9,12]));
-//another solution
-function sumouthm(arr) {
-    let maxvalue = Math.max(...arr);
-    let minvalue = Math.min(...arr);
-    let filterarr = arr.filter((x) => x !== maxvalue && x !== minvalue);
-    let result=filterarr.reduce((acc, current) => acc + current, 0);
-    console.log(result);
-  }
-  
-  // }
-  sumouthm([1, 6, 8, 2,9,12]);
+console.log(sumhm([1,1,6,8,2,9,12,12]));
+/*-------------------------------------*/
