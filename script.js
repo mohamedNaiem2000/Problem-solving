@@ -2,7 +2,7 @@ problem = [
   { number: 1, title: "Even Or Odd" },
   { number: 2, title: "sum without negative" },
   { number: 3, title: "sum without max and min" },
-  { number: 4, title: "Even" },
+  { number: 4, title: "repeat string" },
   { number: 5, title: "revese number" },
 ];
 let btn1 = document.querySelector(".btn1");
