@@ -123,10 +123,14 @@ document.write(solve);
 //   true,false,true,false,]));
   /*-----------------------------------------------*/
   //problem 7
-  function getoppesite(num){
-   return num * -1;
-  }
-  console.log(getoppesite(-6));
+  // function getoppesite(num){
+  //  return num * -1;
+  // }
+  // console.log(getoppesite(-6));
   /*-----------------------------------------------*/
  // problem 8
- 
+ function makenegative(num){
+  return num > 0 ? -num: num
+ }
+ console.log(makenegative(-5));
+ /*-------------------------------------------------*/
