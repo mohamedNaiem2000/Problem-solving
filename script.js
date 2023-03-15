@@ -5,7 +5,9 @@ problem = [
   { number: 4, title: "repeat string" },
   { number: 5, title: "revese number" },
   { number: 6, title:"counter true"},
-  { number: 7, title:"get opposite"}
+  { number: 7, title:"get opposite"},
+  { number: 8, title:"make negative"},
+  { number: 9, title:"correct code"},
 ];
 let btn1 = document.querySelector(".btn1");
 console.log(btn1);
@@ -129,8 +131,15 @@ document.write(solve);
   // console.log(getoppesite(-6));
   /*-----------------------------------------------*/
  // problem 8
- function makenegative(num){
-  return num > 0 ? -num: num
- }
- console.log(makenegative(-5));
+//  function makenegative(num){
+//   return num > 0 ? -num: num
+//  }
+//  console.log(makenegative(-5));
  /*-------------------------------------------------*/
+//problem9
+function greet(name){
+  return name !=="johnny"? "hello ,"+ name:"hello my love"
+}
+console.log(greet("mohamed"))
+console.log(greet("johnny"));
+/*-----------------------------------------------*/
