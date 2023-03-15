@@ -148,15 +148,37 @@ document.write(solve);
 //   for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] === "neddle") {
 //       return `found the neddle at index ${i}`;
-//     } 
+//     }
 //   }
 // }
 // console.log(findNeddle(["ahmed","ali", "neddle","omar"]));
 
 //another solution
-function findNeddle(arr){
-  return "found the neddle at index" + arr.indexof("neddle")
-}
-console.log(findNeddle(["ahmed","ali", "neddle","omar"]));
+// function findNeddle(arr){
+//   return "found the neddle at index" + arr.indexof("neddle")
+// }
+// console.log(findNeddle(["ahmed","ali", "neddle","omar"]));
 
 /*-----------------------------------------------*/
+//problem 11
+// let calcnegative = 0;
+// let numberofpostive = 0;
+// function countPositiveSumNegatives(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//       calcnegative += arr[i];
+//     }
+//     else{
+//       numberofpostive+=1;
+//     }
+//   }
+//   return [numberofpostive,calcnegative];
+// }
+// console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
+ //another solution
+ function countPositiveSumNegatives(arr){
+  let calcnegative = arr.filter((x)=> x>0).length;
+  let numberofpostive = arr.filter((x)=>x<0).reduce((acc,current)=>acc+current,0);
+  return [numberofpostive,calcnegative];
+ }
+ console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
