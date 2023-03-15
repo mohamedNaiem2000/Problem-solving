@@ -4,6 +4,8 @@ problem = [
   { number: 3, title: "sum without max and min" },
   { number: 4, title: "repeat string" },
   { number: 5, title: "revese number" },
+  { number: 6, title:"counter true"},
+  { number: 7, title:"get opposite"}
 ];
 let btn1 = document.querySelector(".btn1");
 console.log(btn1);
@@ -108,14 +110,23 @@ document.write(solve);
 // }
 // console.log(countsheep([true,false,true,false,true,false,
 //   true,false,true,false,]));
+
 //another solution
-function countsheep(arr){
-  let calc=0;
-  arr.map((item)=>{
-    if(item===true)calc++;
-  })
-  return calc;
-}
-console.log(countsheep([true,false,true,false,true,false,
-  true,false,true,false,]));
+// function countsheep(arr){
+//   let calc=0;
+//   arr.map((item)=>{
+//     if(item===true)calc++;
+//   })
+//   return calc;
+// }
+// console.log(countsheep([true,false,true,false,true,false,
+//   true,false,true,false,]));
   /*-----------------------------------------------*/
+  //problem 7
+  function getoppesite(num){
+   return num * -1;
+  }
+  console.log(getoppesite(-6));
+  /*-----------------------------------------------*/
+ // problem 8
+ 
