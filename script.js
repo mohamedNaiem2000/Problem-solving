@@ -90,9 +90,32 @@ document.write(solve);
 // console.log(repeatstr(4,"moh "));
 /*----------------------------------------*/
 //problem 5
-function digitize(num){
-return num.toString().split("").map((x)=>Number(x)).reverse();
-}
- console.log(digitize(98563)); 
+// function digitize(num){
+// return num.toString().split("").map((x)=>Number(x)).reverse();
+// }
+//  console.log(digitize(98563)); 
  /*----------------------------------------*/
-
+ //problem 6
+//  let calc=0;
+// function countsheep(arr){
+// for (let i = 0; i < arr.length; i++) {
+//   if(arr[i]===true){
+//     calc++;
+//   }
+  
+// }
+// return calc;
+// }
+// console.log(countsheep([true,false,true,false,true,false,
+//   true,false,true,false,]));
+//another solution
+function countsheep(arr){
+  let calc=0;
+  arr.map((item)=>{
+    if(item===true)calc++;
+  })
+  return calc;
+}
+console.log(countsheep([true,false,true,false,true,false,
+  true,false,true,false,]));
+  /*-----------------------------------------------*/
