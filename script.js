@@ -194,11 +194,29 @@ document.write(solve);
 // console.log(doubleChar("hello"));
 /*------------------------------*/
 //problem 13
-function basicop(operation,value1,value2){
-  if(operation==="+")return value1+value2 ;
-  if(operation==="-")return value1-value2 ;
-  if(operation==="*")return value1*value2 ;
-  if(operation==="/")return value1/value2 ;
+// function basicop(operation,value1,value2){
+//   if(operation==="+")return value1+value2 ;
+//   if(operation==="-")return value1-value2 ;
+//   if(operation==="*")return value1*value2 ;
+//   if(operation==="/")return value1/value2 ;
 
+// }
+// console.log(basicop("/",5,5));
+/*-----------------------------*/
+//problem 14
+function squareorSquareroot(arr){
+  let newrr=[];
+  // arr.map((element)=>)
+  for (let i = 0; i < arr.length; i++) {
+    // let newnumber= Math.sqrt(arr[i]);
+   if(newnumber.isInteger===true){
+    newrr.push(newnumber);
+   }
+   else{
+    newrr.push(arr[i]*arr[i]);
+   }
+    
+  }
+  return newrr
 }
-console.log(basicop("/",5,5));
+console.log(squareorSquareroot([2,4,9]));
