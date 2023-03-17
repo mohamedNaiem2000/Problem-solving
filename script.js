@@ -11,6 +11,7 @@ problem = [
   { number:10, title: "find Neddle" },
   { number:11, title: "count Positive Sum Negatives"},
   { number:12, title: "double Char"},
+  { number:13, title: "square or Square root"}
 ];
 let btn1 = document.querySelector(".btn1");
 let solve = problem.map((obj) => {
@@ -220,3 +221,14 @@ function squareorSquareroot(arr){
   return newrr
 }
 console.log(squareorSquareroot([2,4,9,10]));
+
+
+//another solution
+
+// function squareorSquareroot(arr){
+//  return arr.map((number)=>
+//     Number.isInteger(Math.sqrt(number))? Math.sqrt(number):number*number
+//   )
+// }
+// console.log(squareorSquareroot([2,4,9,10]));
+/*------------------------------------*/
