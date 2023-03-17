@@ -9,10 +9,10 @@ problem = [
   { number: 8, title: "make negative" },
   { number: 9, title: "correct code" },
   { number:10, title: "find Neddle" },
-  { number:11, title: "count Positive Sum Negatives"}
+  { number:11, title: "count Positive Sum Negatives"},
+  { number:12, title: "double Char"},
 ];
 let btn1 = document.querySelector(".btn1");
-console.log(btn1);
 let solve = problem.map((obj) => {
   return `<h3>
           number-  ${obj.number} name-  ${obj.title} <button>finish</button>
@@ -188,8 +188,17 @@ document.write(solve);
 //problem 12
 // string = ssttrriinngg
 
-function doubleChar(str){
-  return str.split("").map((char)=>char.repeat(2)).join("")
-}
-console.log(doubleChar("hello"));
+// function doubleChar(str){
+//   return str.split("").map((char)=>char.repeat(2)).join("")
+// }
+// console.log(doubleChar("hello"));
 /*------------------------------*/
+//problem 13
+function basicop(operation,value1,value2){
+  if(operation==="+")return value1+value2 ;
+  if(operation==="-")return value1-value2 ;
+  if(operation==="*")return value1*value2 ;
+  if(operation==="/")return value1/value2 ;
+
+}
+console.log(basicop("/",5,5));
