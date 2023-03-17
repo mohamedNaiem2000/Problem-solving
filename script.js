@@ -8,6 +8,8 @@ problem = [
   { number: 7, title: "get opposite" },
   { number: 8, title: "make negative" },
   { number: 9, title: "correct code" },
+  { number:10, title: "find Neddle" },
+  { number:11, title: "count Positive Sum Negatives"}
 ];
 let btn1 = document.querySelector(".btn1");
 console.log(btn1);
@@ -176,9 +178,18 @@ document.write(solve);
 // }
 // console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
  //another solution
- function countPositiveSumNegatives(arr){
-  let calcnegative = arr.filter((x)=> x>0).length;
-  let numberofpostive = arr.filter((x)=>x<0).reduce((acc,current)=>acc+current,0);
-  return [numberofpostive,calcnegative];
- }
- console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
+//  function countPositiveSumNegatives(arr){
+//   let calcnegative = arr.filter((x)=> x>0).length;
+//   let numberofpostive = arr.filter((x)=>x<0).reduce((acc,current)=>acc+current,0);
+//   return [numberofpostive,calcnegative];
+//  }
+//  console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
+/*-----------------------------------------*/
+//problem 12
+// string = ssttrriinngg
+
+function doubleChar(str){
+  return str.split("").map((char)=>char.repeat(2)).join("")
+}
+console.log(doubleChar("hello"));
+/*------------------------------*/
