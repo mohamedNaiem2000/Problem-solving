@@ -206,11 +206,11 @@ document.write(solve);
 //problem 14
 function squareorSquareroot(arr){
   let newrr=[];
-  // arr.map((element)=>)
+
   for (let i = 0; i < arr.length; i++) {
     // let newnumber= Math.sqrt(arr[i]);
-   if(newnumber.isInteger===true){
-    newrr.push(newnumber);
+   if(Number.isInteger(Math.sqrt(arr[i]))){
+    newrr.push(Math.sqrt(arr[i]));
    }
    else{
     newrr.push(arr[i]*arr[i]);
@@ -219,4 +219,4 @@ function squareorSquareroot(arr){
   }
   return newrr
 }
-console.log(squareorSquareroot([2,4,9]));
+console.log(squareorSquareroot([2,4,9,10]));
