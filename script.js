@@ -232,11 +232,18 @@ document.write(solve);
 // console.log(squareorSquareroot([2,4,9,10]));
 /*------------------------------------*/
 // problem 15
-function countbyx(x, n) {
-  let arr = [];
-  for (let i = 1; i <= n; i++) {
-    arr.push(x* i);
-  }
-  return arr;
+// function countbyx(x, n) {
+//   let arr = [];
+//   for (let i = 1; i <= n; i++) {
+//     arr.push(x* i);
+//   }
+//   return arr;
+// }
+// console.log(countbyx(1, 10));
+/*-----------------------------------*/
+//problem 16
+function removestringspace(string){
+ return string.split(" ").join("");
 }
-console.log(countbyx(1, 10));
+
+console.log(removestringspace("nvfsln jbjf"));
