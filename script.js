@@ -8,10 +8,10 @@ problem = [
   { number: 7, title: "get opposite" },
   { number: 8, title: "make negative" },
   { number: 9, title: "correct code" },
-  { number:10, title: "find Neddle" },
-  { number:11, title: "count Positive Sum Negatives"},
-  { number:12, title: "double Char"},
-  { number:13, title: "square or Square root"}
+  { number: 10, title: "find Neddle" },
+  { number: 11, title: "count Positive Sum Negatives" },
+  { number: 12, title: "double Char" },
+  { number: 13, title: "square or Square root" },
 ];
 let btn1 = document.querySelector(".btn1");
 let solve = problem.map((obj) => {
@@ -178,7 +178,7 @@ document.write(solve);
 //   return [numberofpostive,calcnegative];
 // }
 // console.log(countPositiveSumNegatives([1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15]));
- //another solution
+//another solution
 //  function countPositiveSumNegatives(arr){
 //   let calcnegative = arr.filter((x)=> x>0).length;
 //   let numberofpostive = arr.filter((x)=>x<0).reduce((acc,current)=>acc+current,0);
@@ -205,23 +205,22 @@ document.write(solve);
 // console.log(basicop("/",5,5));
 /*-----------------------------*/
 //problem 14
-function squareorSquareroot(arr){
-  let newrr=[];
+// function squareorSquareroot(arr){
+//   let newrr=[];
 
-  for (let i = 0; i < arr.length; i++) {
-    // let newnumber= Math.sqrt(arr[i]);
-   if(Number.isInteger(Math.sqrt(arr[i]))){
-    newrr.push(Math.sqrt(arr[i]));
-   }
-   else{
-    newrr.push(arr[i]*arr[i]);
-   }
-    
-  }
-  return newrr
-}
-console.log(squareorSquareroot([2,4,9,10]));
+//   for (let i = 0; i < arr.length; i++) {
 
+//    if(Number.isInteger(Math.sqrt(arr[i]))){
+//     newrr.push(Math.sqrt(arr[i]));
+//    }
+//    else{
+//     newrr.push(arr[i]*arr[i]);
+//    }
+
+//   }
+//   return newrr
+// }
+// console.log(squareorSquareroot([2,4,9,10]));
 
 //another solution
 
@@ -232,3 +231,12 @@ console.log(squareorSquareroot([2,4,9,10]));
 // }
 // console.log(squareorSquareroot([2,4,9,10]));
 /*------------------------------------*/
+// problem 15
+function countbyx(x, n) {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(x* i);
+  }
+  return arr;
+}
+console.log(countbyx(1, 10));
