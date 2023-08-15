@@ -16,7 +16,7 @@ problem = [
 
 let solve = problem.map((obj) => {
   return `
-        <h1>  number-  ${obj.number} name-  ${obj.title} </h1> `
+        <h1>  number-  ${obj.number} name-  ${obj.title} </h1> `;
 });
 document.write(solve);
 /*----------------------------------------*/
@@ -48,7 +48,6 @@ document.write(solve);
 // console.log(sum);
 // }
 // sumposetive([5,6,-7,8,9,-4]);
-
 
 // //another solution
 
@@ -279,4 +278,8 @@ document.write(solve);
 // }
 // console.log(checkBollen(false));
 /*---------------------------------*/
-
+//problem 19
+function reverseWord(word) {
+return word.split(" ").reverse().join(" ")
+}
+console.log(reverseWord("hello world"));
