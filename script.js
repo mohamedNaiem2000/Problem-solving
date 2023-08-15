@@ -13,12 +13,10 @@ problem = [
   { number: 12, title: "double Char" },
   { number: 13, title: "square or Square root" },
 ];
-let btn1 = document.querySelector(".btn1");
+
 let solve = problem.map((obj) => {
-  return `<h3>
-          number-  ${obj.number} name-  ${obj.title} <button>finish</button>
-          </h3>
-           `;
+  return `
+        <h1>  number-  ${obj.number} name-  ${obj.title} </h1> `
 });
 document.write(solve);
 /*----------------------------------------*/
@@ -39,7 +37,7 @@ document.write(solve);
 // }
 // console.log(evorod(5));
 /*--------------------------------------*/
-//problem 2
+//problem 2 Sum Of Posstive
 // let sum=0;
 // function sumposetive(arr){
 // for (let i = 0; i < arr.length; i++) {
@@ -50,6 +48,7 @@ document.write(solve);
 // console.log(sum);
 // }
 // sumposetive([5,6,-7,8,9,-4]);
+
 
 // //another solution
 
@@ -233,17 +232,51 @@ document.write(solve);
 /*------------------------------------*/
 // problem 15
 // function countbyx(x, n) {
-//   let arr = [];
-//   for (let i = 1; i <= n; i++) {
-//     arr.push(x* i);
-//   }
-//   return arr;
+//  let arr=[];
+//  for(let i=1;i<=n;i++){
+//   arr.push(i*x)
+//  }
+//  return arr;
 // }
-// console.log(countbyx(1, 10));
+// console.log(countbyx(3,10));
 /*-----------------------------------*/
 //problem 16
-function removestringspace(string){
- return string.split(" ").join("");
-}
+// function removestringspace(string){
+//  return string.split(" ").join("");
+// }
+// console.log(removestringspace("nvfsln jbjf jgvj"));
+/*-----------------------------------*/
+// problem 17
+// function invert(array){
+//   let newarr=[];
+//   for(let i=0;i<array.length;i++){
+//     newarr.push(array[i]*-1)
+//   }
+//   return newarr;
+// }
+// console.log(invert([1,5,-6,-9,8]));
 
-console.log(removestringspace("nvfsln jbjf"));
+//another solution
+// function invert(array){
+//   return array.map((x)=>x*-1)
+// }
+// console.log(invert([1,5,-6,-9,8]));
+/*-------------------------------*/
+//problem 18
+// function checkBollen(bool){
+//   if(bool==true){
+//     return "yes"
+//   }
+//   else{
+//     return "no"
+//   }
+// }
+// console.log(checkBollen(true));
+
+//another solution
+// function checkBollen(bool){
+//   return bool?"yes":"no"
+// }
+// console.log(checkBollen(false));
+/*---------------------------------*/
+
